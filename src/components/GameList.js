@@ -53,7 +53,7 @@ export default function GameList() {
     setLoading(true);
     try {
       const { data } = await axios.get(
-        `https://resapi-icip.vercel.app/category?category=${selectedCategory}&page=${page}`
+        `https://www.icipgames.site/category?category=${selectedCategory}&page=${page}`
       );
       setGames(data);
     } catch (error) {
